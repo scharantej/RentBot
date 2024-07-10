@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rental Property Results</title>
+</head>
+<body>
+<h1>Rental Property Results</h1>
+<ul>
+{% for property in properties %}
+<li>{{ property.address }} - {{ property.price }} - {{ property.num_beds }} bedrooms - {{ property.num_baths }} bathrooms</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
